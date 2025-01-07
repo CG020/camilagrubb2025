@@ -457,6 +457,25 @@ footer {
         color: $text;
         margin: 0;
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            width: 50%; 
+            max-width: 600px;
+            min-width: 300px;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+    }
+    
 }
 
 /*
@@ -996,6 +1015,12 @@ footer {
             font-size: 0.9em;
             padding: 5px 10px;
         }
+    }
+
+    #about .row img {
+        width: 70%;
+        margin: 20px 0;
+        padding: 10px;
     }
 
 }
