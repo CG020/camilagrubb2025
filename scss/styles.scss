@@ -479,18 +479,15 @@ h1.line-1 {
     container {
         display: flex;
         align-items: center; 
+        width: 100%; 
         justify-content: flex-start; 
         flex-wrap: wrap; 
+        padding: 0;
     }
 
-    .col-lg-4 {
-        flex: 1;
-        max-width: 35%; 
-    }
-
-    .col-md-8 {
-        flex: 2; 
-        max-width: 65%;
+    .about-text {
+        flex-grow: 1;
+        padding: 20px;
     }
 
     h2 {
@@ -509,9 +506,12 @@ h1.line-1 {
         flex-wrap: wrap;
     }
 
-    img {
-        width: 100%; 
+    .profile-image {
+        flex-basis: 25%;
+        max-width: 25%;
+        min-width: 150px;
         height: auto;
+        margin-right: 20px;
     }
     
 }
@@ -1050,12 +1050,14 @@ h1.line-1 {
         flex-direction: column;
     }
 
-    #about .col-lg-4 {
-        max-width: 100%;
+    #about .profile-image {
+        width: 100%; 
+        max-width: 100%; 
+        margin-right: 0;
     }
 
-    #about .col-md-8 {
-        max-width: 100%;
+    #about .about-text {
+        padding: 20px;
     }
 
 }
