@@ -473,16 +473,11 @@ h1.line-1 {
 */
 
 #about {
-    padding: 75px 15px;
-    border-bottom: 1px solid $border;
-    
-    container {
-        display: flex;
-        align-items: center; 
-        width: 100%; 
-        justify-content: flex-start; 
-        padding: 20px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px; 
 
     .about-text {
         padding-left: 20px; 
