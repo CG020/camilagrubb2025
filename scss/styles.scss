@@ -475,6 +475,24 @@ h1.line-1 {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    
+    container {
+        display: flex;
+        align-items: center; 
+        justify-content: flex-start; 
+        flex-wrap: wrap; 
+    }
+
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%; 
+        order: 2; 
+    }
+
+    .col-md-8 {
+        flex: 1; 
+        order: 1;
+    }
 
     h2 {
         color: $heading;
@@ -493,10 +511,11 @@ h1.line-1 {
     }
 
     img {
-        width: 100%;
-        max-width: 400px;
-        // border-radius: 15px;
-        // box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+        width: 100%; 
+        max-width: 400px; 
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
     
 }
@@ -1029,6 +1048,22 @@ h1.line-1 {
 
     .social {
         text-align: center;
+    }
+
+    #about .container {
+        justify-content: space-between; 
+    }
+
+    #about .col-lg-4 {
+        flex: 0 0 25%; 
+        max-width: 25%;
+        order: 1;
+    }
+
+    #about .col-md-8 {
+        flex: 0 0 70%; 
+        max-width: 70%; 
+        order: 2;
     }
 
 }
