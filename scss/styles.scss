@@ -487,20 +487,16 @@ h1.line-1 {
 
     .row {
         display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 2rem;
+        flex-wrap: nowrap;
+    }
 
-        img {
-            width: 40%; 
-            max-width: 600px;
-            min-width: 300px;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 40px 0;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
-        }
+    img {
+        width: 100%;
+        max-width: 400px;
+        // border-radius: 15px;
+        // box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
     }
     
 }
@@ -1055,10 +1051,21 @@ h1.line-1 {
         }
     }
 
-    #about .row img {
-        width: 70%;
-        margin: 20px 0;
-        padding: 10px;
+    #about {
+        .row {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        img {
+            max-width: 250px;
+            margin: 20px auto;
+        }
+
+        p {
+            text-align: left;
+        }
     }
 
 }
