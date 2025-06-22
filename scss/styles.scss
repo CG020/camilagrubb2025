@@ -630,12 +630,49 @@ h1.line-1 {
     }
 }
 
+/* Two-column layout */
+.education-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Left Column Styles */
+.education-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.graduation-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.graduation-photo .profile-image {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.education-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
     border: 1px solid $border;
     text-align: left;
+    background: white;
+    border-radius: 8px;
 
     h3 {
         font-weight: 500;
@@ -664,6 +701,104 @@ h1.line-1 {
 
     ul {
         padding: 0 0 0 15px;
+    }
+}
+
+/* Right Column Styles */
+.education-right {
+    text-align: left;
+}
+
+.course-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.course-category {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.category-title {
+    color: #5B3A7D;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid rgba(81, 70, 115, 0.2);
+    padding-bottom: 8px;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.course-item {
+    display: inline-block;
+    margin: 3px;
+    padding: 6px 12px;
+    color: #374054;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    font-size: 0.85em;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.course-item:hover {
+    background: rgba(81, 70, 115, 0.1);
+    border-color: rgba(81, 70, 115, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .education-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .course-categories {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .graduation-photo .profile-image {
+        width: 250px;
+    }
+    
+    .education-block {
+        h3, span {
+            float: none;
+            display: block;
+        }
+        
+        span {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .course-category {
+        padding: 15px;
+    }
+    
+    .category-title {
+        font-size: 1em;
+    }
+    
+    .course-item {
+        font-size: 0.8em;
+        padding: 5px 10px;
     }
 }
 
