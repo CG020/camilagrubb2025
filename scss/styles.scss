@@ -1259,6 +1259,7 @@ h1.line-1 {
 
 .timeline-company a:hover {
     text-decoration: underline;
+    color: adjust-color($color: #5e2677, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0);
 }
 
 .timeline-position {
@@ -1283,6 +1284,7 @@ h1.line-1 {
     color: #74808a;
     line-height: 1.6;
     margin-bottom: 12px;
+    text-align: left;
 }
 
 .timeline-description ul {
