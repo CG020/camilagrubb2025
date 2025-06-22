@@ -74,12 +74,12 @@
                 <br>
                 <h2 class="heading">About Me</h2>
                     <p style="text-indent:30px; font-size: 19px;">
-                        <i>Hello, my name is Camila Grubb and I am a Business Analyst at <a href="https://aurasolutionsllc.com/">Aura Solutions LLC</a>. 
+                        <i>Welcome to my site, I am Camila Grubb and I am a Business Analyst at <a href="https://aurasolutionsllc.com/">Aura Solutions LLC</a>. 
                         I am a University of Arizona graduate with my Bachelor's in Computer Science, a minor in Business Administration, and a certificate in Cybersecurity. 
                         I have hands-on experience in data science, software engineering, and machine learning through research and coursework. My contributions as
-                        a student researcher include writing/optimizing Python scripts for data analysis and leveraging machine
+                        a student researcher include writing and optimizing scripts for data analysis and leveraging machine
                         learning models to solve real-world problems in the medical industry. I now utilize my strong data analytics and communications skills to gather, investigate, and deliver 
-                        quality software solutions with my amazing team!
+                        quality software solutions with <i>Aura</i>.
                         <br><br>
                         Explore my <a href="https://www.linkedin.com/in/camila-grubb-8ab00b240/"><b>Linkedin</b></a> or 
                         <a href="https://github.com/CG020"> <b>GitHub</b></a> for detailed projects and achievements.</i>
@@ -89,74 +89,111 @@
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="June 2025 – Present">
-                <h3><a href="https://aurasolutionsllc.com/">Aura Solutions LLC</a></h3>
-                <h4>Business Analyst</h4>
-                <p>Current Role<br>
-                <i>Skills: communication, detail orientation, organization, meeting conduction, data visualization, data cleaning, software development
-                    life cycle (SDLC), Agile method, SQL
-                </i>
-                </p>
+    <div class="collapsible-resume">
+        <div class="resume-header" id="resumeHeader" onclick="toggleResume()">
+            <div class="resume-header-content">
+                <div class="resume-title">
+                    <h2 class="heading">Experience</h2>
+                    <p class="resume-subtitle">Business Analyst & Research Experience</p>
+                </div>
+                <div class="resume-toggle">
+                    <span id="toggleText">View Details</span>
+                    <i class="fa fa-chevron-down chevron" id="chevronIcon"></i>
+                </div>
             </div>
+        </div>
 
-            <div data-date="August 2022 – December 2024">
-                <h3>University of Arizona</h3>
-                <h4>Research Lab Assistant (Arizona Center for Accelerated Biomedical Innovation)</h4>
-                <p>
-                    • Designed and implemented code-based solutions for detecting movement abnormalities in CKD patients ensuring validity and clear visualization of motion data.<br>
-                    • Optimized Python scripts for statistical analysis eliminating need for manual validation and reducing data processing time.<br>
-                    • Verified the efficacy and usability of 3 large language models for their use in clinical record keeping.<br>
-                    • Prepares papers and presentations for professional medical conferences (ASAIO, ASN, BMES, Banner)<br>
-                <i>Skills: python scripting, data visualization using python data libraries, research publication paper writing, communication amongst peers and inter-project members,
-                    experiment design and planning
-                </i>
-                </p>
-            </div>
-            <!-- End .experience-block -->
+        <div class="resume-content" id="resumeContent">
+            <div class="resume-inner">
+                <div class="timeline">
+                    <!-- Current Position -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2025 – Present</div>
+                        <h3 class="timeline-company">
+                            <a href="https://aurasolutionsllc.com/">Aura Solutions LLC</a>
+                        </h3>
+                        <h4 class="timeline-position">Business Analyst</h4>
+                        <div class="current-role">Current Role</div>
+                        <div class="timeline-skills">
+                            <strong>Skills:</strong> communication, detail orientation, organization, meeting conduction, data visualization, data cleaning, software development life cycle (SDLC), Agile method, SQL
+                        </div>
+                    </div>
 
-            <div data-date="May 2024 – August 2024">
-                <h3>University of Arizona Banner</h3>
-                <h4>ADVANCE Kidney Research Project (Lead Role)</h4>
-                <p>
-                • Directed a research team of undergraduate students to design experiments for successfully evaluating the efficiency of Texas Instruments millimeter-wave radar sensors. <br>
-                • Facilitated collaboration across engineering and medical teams, fostering clear communication and on-time project delivery. <br>
-                • Configured and calibrated sensors for real-time data acquisition using TI hardware and custom Python scripts, achieving precise control over experiments. <br>
-                • Utilized version control systems (Git, GitHub) for maintaining code repositories. <br>
-                <i>Skills: leadership, scheduling and organization of meetings, python scripting, data capture from hardware source
-                </i>
-                </p>
-            </div>
-            <!-- End .experience-block -->
+                    <!-- University of Arizona Research -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">August 2022 – December 2024</div>
+                        <h3 class="timeline-company">University of Arizona</h3>
+                        <h4 class="timeline-position">Research Lab Assistant (Arizona Center for Accelerated Biomedical Innovation)</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Designed and implemented code-based solutions for detecting movement abnormalities in CKD patients ensuring validity and clear visualization of motion data.</li>
+                                <li>Optimized Python scripts for statistical analysis eliminating need for manual validation and reducing data processing time.</li>
+                                <li>Verified the efficacy and usability of 3 large language models for their use in clinical record keeping.</li>
+                                <li>Prepares papers and presentations for professional medical conferences (ASAIO, ASN, BMES, Banner)</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <strong>Skills:</strong> python scripting, data visualization using python data libraries, research publication paper writing, communication amongst peers and inter-project members, experiment design and planning
+                        </div>
+                    </div>
 
-            <div data-date="February 2023 – May 2024">
-                <h3>UA Design Labs</h3>
-                <h4>Design Lab Intern</h4>
-                <p>
-                • Developed and prototyped software solutions for APEX Applied Technologies, addressing outreach needs for new clients needing to apprehend financial terminology. <br>
-                • Conducted requirements gathering, developed technical specifications, and collaborated with cross-functional teams to deliver product designs on time. <br>
-                • Researched and identified funding opportunities and cost-effective website resources, reducing financial burdens for the company. <br>
-                <i>Skills: communication between company sponsor and developer team, finincial research, product design and pitching, presentation skills, progress 
-                    reporting, software development cycle and product managing
-                </i>
-                </p>
-            </div>
+                    <!-- ADVANCE Kidney Research Project -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2024 – August 2024</div>
+                        <h3 class="timeline-company">University of Arizona Banner</h3>
+                        <h4 class="timeline-position">ADVANCE Kidney Research Project (Lead Role)</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Directed a research team of undergraduate students to design experiments for successfully evaluating the efficiency of Texas Instruments millimeter-wave radar sensors.</li>
+                                <li>Facilitated collaboration across engineering and medical teams, fostering clear communication and on-time project delivery.</li>
+                                <li>Configured and calibrated sensors for real-time data acquisition using TI hardware and custom Python scripts, achieving precise control over experiments.</li>
+                                <li>Utilized version control systems (Git, GitHub) for maintaining code repositories.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <strong>Skills:</strong> leadership, scheduling and organization of meetings, python scripting, data capture from hardware source
+                        </div>
+                    </div>
 
-            <div data-date="December 2023 – Present">
-                <h3>University of Arizona Libraries</h3>
-                <h4>Resource Sharing Assistant</h4>
-                <p>
-                • Organizes and completes tasks to ensure library patrons get the resources they require with good customer service skills and willing attitude.<br>
-                • Prepares materials for transit and locates all missing and in process items so flow of library requests runs smoothly.<br>
-                • Maintains organization of library database Illiad to ensure tracking of all requests, loans, and messages are filled out appropriately.<br><br>
-                <i>Skills: communication between peers, organization, detail orientated mindset, customer service, work ethic
-                </i>
-                </p>
+                    <!-- Design Lab Intern -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">February 2023 – May 2024</div>
+                        <h3 class="timeline-company">UA Design Labs</h3>
+                        <h4 class="timeline-position">Design Lab Intern</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed and prototyped software solutions for APEX Applied Technologies, addressing outreach needs for new clients needing to apprehend financial terminology.</li>
+                                <li>Conducted requirements gathering, developed technical specifications, and collaborated with cross-functional teams to deliver product designs on time.</li>
+                                <li>Researched and identified funding opportunities and cost-effective website resources, reducing financial burdens for the company.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <strong>Skills:</strong> communication between company sponsor and developer team, financial research, product design and pitching, presentation skills, progress reporting, software development cycle and product managing
+                        </div>
+                    </div>
+
+                    <!-- Library Assistant -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 2023 – Present</div>
+                        <h3 class="timeline-company">University of Arizona Libraries</h3>
+                        <h4 class="timeline-position">Resource Sharing Assistant</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Organizes and completes tasks to ensure library patrons get the resources they require with good customer service skills and willing attitude.</li>
+                                <li>Prepares materials for transit and locates all missing and in process items so flow of library requests runs smoothly.</li>
+                                <li>Maintains organization of library database Illiad to ensure tracking of all requests, loans, and messages are filled out appropriately.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-skills">
+                            <strong>Skills:</strong> communication between peers, organization, detail orientated mindset, customer service, work ethic
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- End .experience-block -->
         </div>
     </div>
+</div>
+
     <!-- End #experience -->
 
     <div id="education">
@@ -382,6 +419,45 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+
+    <script>
+    let isExpanded = false;
+    let isAnimating = false;
+
+    function toggleResume() {
+        if (isAnimating) return;
+        
+        isAnimating = true;
+        isExpanded = !isExpanded;
+        
+        const header = document.getElementById('resumeHeader');
+        const content = document.getElementById('resumeContent');
+        const chevron = document.getElementById('chevronIcon');
+        const toggleText = document.getElementById('toggleText');
+        
+        // Add bump animation
+        header.classList.add('animating');
+        
+        // Toggle expansion
+        if (isExpanded) {
+            content.classList.add('expanded');
+            header.classList.add('expanded');
+            chevron.classList.add('rotated');
+            toggleText.textContent = 'Collapse';
+        } else {
+            content.classList.remove('expanded');
+            header.classList.remove('expanded');
+            chevron.classList.remove('rotated');
+            toggleText.textContent = 'View Details';
+        }
+        
+        // Remove animation class after animation completes
+        setTimeout(() => {
+            header.classList.remove('animating');
+            isAnimating = false;
+        }, 200);
+    }
+</script>
 </body>
 
 </html>
