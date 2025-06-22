@@ -709,46 +709,40 @@ h1.line-1 {
     text-align: left;
 }
 
-.course-categories {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    align-items: start;
-}
-
-.course-category {
+.single-course-category {
     background: white;
     border-radius: 12px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    height: fit-content;
 }
 
 .category-title {
     color: #5B3A7D;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
     border-bottom: 2px solid rgba(81, 70, 115, 0.2);
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .course-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .course-item {
     display: inline-block;
-    margin: 3px;
-    padding: 6px 12px;
+    margin: 5px;
+    padding: 8px 15px;
     color: #374054;
     background: #f8f9fa;
     border: 1px solid #e9ecef;
-    border-radius: 15px;
-    font-size: 0.85em;
+    border-radius: 20px;
+    font-size: 0.9em;
     transition: all 0.2s ease;
     cursor: default;
 }
@@ -765,40 +759,20 @@ h1.line-1 {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
-    .course-categories {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
 }
 
 @media (max-width: 768px) {
-    .graduation-photo .profile-image {
-        width: 250px;
-    }
-    
-    .education-block {
-        h3, span {
-            float: none;
-            display: block;
-        }
-        
-        span {
-            margin-bottom: 10px;
-        }
-    }
-    
-    .course-category {
-        padding: 15px;
+    .single-course-category {
+        padding: 20px;
     }
     
     .category-title {
-        font-size: 1em;
+        font-size: 1.1em;
     }
     
     .course-item {
-        font-size: 0.8em;
-        padding: 5px 10px;
+        font-size: 0.85em;
+        padding: 6px 12px;
     }
 }
 
