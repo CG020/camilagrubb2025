@@ -53,7 +53,6 @@
         <div id="lead-content">
             <h1 class="line-1 anim-typewriter">Camila Grubb</h1>
             <h2>Business Analyst</h2>
-            <!-- <a href="libs/CamilaGrubbResume.docx.pdf" download="CamilaGrubbResume.pdf" class="btn-rounded-white">Download Resume</a> -->
         </div>
         <!-- End #lead-content -->
 
@@ -75,8 +74,10 @@
                 <h2 class="heading">About Me</h2>
                     <p style="text-indent:30px; font-size: 19px;">
                         <i>Welcome to my site, I am Camila Grubb and I am a Business Analyst at <a href="https://aurasolutionsllc.com/">Aura Solutions LLC</a>. 
-                        I am a University of Arizona graduate with my Bachelor's in Computer Science, a minor in Business Administration, and a certificate in Cybersecurity. 
-                        <br> <br> I have hands-on experience in data science, software engineering, and machine learning through research and coursework. My contributions as
+                        I am a University of Arizona graduate with my Bachelor's in Computer Science, a minor in Business Administration, and a certificate in Cybersecurity. </p>
+                        <br> <br> 
+                        <p style="text-indent:30px; font-size: 19px;">
+                        I have hands-on experience in data science, software engineering, and machine learning through research and coursework. My contributions as
                         a student researcher include writing and optimizing scripts for data analysis and leveraging machine
                         learning models to solve real-world problems in the medical industry. I now utilize my strong data analytics and communications skills to gather, investigate, and deliver 
                         quality software solutions with <i>Aura</i>.
@@ -169,23 +170,6 @@
                         </div>
                         <div class="timeline-skills">
                             <strong>Skills:</strong> communication between company sponsor and developer team, financial research, product design and pitching, presentation skills, progress reporting, software development cycle and product managing
-                        </div>
-                    </div>
-
-                    <!-- Library Assistant -->
-                    <div class="timeline-item">
-                        <div class="timeline-date">December 2023 – Present</div>
-                        <h3 class="timeline-company">University of Arizona Libraries</h3>
-                        <h4 class="timeline-position">Resource Sharing Assistant</h4>
-                        <div class="timeline-description">
-                            <ul>
-                                <li>Organizes and completes tasks to ensure library patrons get the resources they require with good customer service skills and willing attitude.</li>
-                                <li>Prepares materials for transit and locates all missing and in process items so flow of library requests runs smoothly.</li>
-                                <li>Maintains organization of library database Illiad to ensure tracking of all requests, loans, and messages are filled out appropriately.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-skills">
-                            <strong>Skills:</strong> communication between peers, organization, detail orientated mindset, customer service, work ethic
                         </div>
                     </div>
                 </div>
@@ -414,10 +398,8 @@
         const chevron = document.getElementById('chevronIcon');
         const toggleText = document.getElementById('toggleText');
         
-        // Add bump animation
         header.classList.add('animating');
         
-        // Toggle expansion
         if (isExpanded) {
             content.classList.add('expanded');
             header.classList.add('expanded');
@@ -430,7 +412,6 @@
             toggleText.textContent = 'View Details';
         }
         
-        // Remove animation class after animation completes
         setTimeout(() => {
             header.classList.remove('animating');
             isAnimating = false;
